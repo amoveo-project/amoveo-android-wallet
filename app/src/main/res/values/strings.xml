@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Amoveo Wallet</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_balance">Wallet</string>
+    <string name="title_send">Send</string>
+    <string name="title_receive">Receive</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="prompt_password">Password</string>
+    <string name="prompt_mnemonic_password">Mnemonic password (optional)</string>
+    <string name="prompt_wallet_password_create">Wallet password</string>
+    <string name="prompt_private_key">Private key</string>
+    <string name="prompt_wallet_password">Wallet password</string>
+    <string name="prompt_confirm_wallet_password">Wallet password confirmation</string>
+    <string name="prompt_amount">Amount</string>
+    <string name="prompt_address">Address</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_receive">Receive</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_create_wallet">Create Wallet</string>
+    <string name="action_set_wallet_password">Set Wallet Password</string>
+    <string name="action_restore_wallet">Restore Wallet</string>
+    <string name="action_mnemonic">Passphrase</string>
+    <string name="action_transaction">Transaction</string>
+
+    <string name="info_private_login_key">Mnemonic phrase</string>
+    <string name="action_private_login_key">Enter mnemonic phrase</string>
+    <string name="action_settings">Settings</string>
+    <string name="balance">Balance</string>
+    <string name="history">History</string>
+    <string name="chart">Chart</string>
+    <string name="address">Address</string>
+
+    <string name="no_transactions_info"><![CDATA[You have no transactions yet.<br/><u>Receive some VEO?</u>]]></string>
+    <string name="future_transactions_info">Your future transactions\nwill be shown here</string>
+    <string name="wallet_clipboard">Wallet address has been copied to clipboard</string>
+    <string name="address_clipboard">Address has been copied to clipboard</string>
+    <string name="txhash_clipboard">TxHash has been copied to clipboard</string>
+    <string name="amoveo">Amoveo</string>
+    <string name="wallet">Wallet</string>
+    <string name="action_send">Send</string>
+    <string name="fee_eth">Network fee: %s VEO</string>
+    <string name="fee_veo">Network fee: up to %s VEO</string>
+    <string name="fee_level">Fee level</string>
+    <string name="fee_type">Fee type</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="status">Status</string>
+
+    <string name="usd_symbol">$</string>
+    <string name="eur_symbol">€</string>
+
+    <string name="amoveo_name">VEO</string>
+
+    <string name="declined">Declined</string>
+    <string name="processing">Processing</string>
+    <string name="confirmed">Confirmed</string>
+
+    <string name="network">Blockchain network</string>
+    <string name="privacy">Privacy level</string>
+    <string name="currency">Balance currency</string>
+    <string name="send_to">Successfully sent to</string>
+    <string name="password_weak">The password is too weak</string>
+    <string name="enter_wallet_password">Enter Wallet Password</string>
+    <string name="action_new_wallet">Create new wallet</string>
+    <string name="action_about">About Amoveo Wallet</string>
+    <string name="action_about1"></string>
+    <string name="action_privacy">Privacy settings</string>
+    <string name="notify_mnemonic">Write this passphase and store it somewhere safe. This is the only one way to restore access to your wallet</string>
+
+    <string name="ok">Ok</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="skip">Skip</string>
+
+    <string name="new_wallet_notify">Do you really want to delete wallet?</string>
+    <string name="enter_pin">Enter security code</string>
+    <string name="create_pin">PIN code</string>
+    <string name="change_pin">Change security code</string>
+    <string name="confirm_pin">Confirm security code</string>
+
+    <string name="message_wallet_created">Wallet succesfully created</string>
+    <string name="message_wallet_restored">Wallet succesfully restored</string>
+    <string name="urgent">Urgent</string>
+    <string name="standard">Standard</string>
+    <string name="low">Safe low</string>
+    <string name="fast">Fast</string>
+    <string name="version">Version</string>
+    <string name="link">Link</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="italian">Italian</string>
+    <string name="czech">Czech</string>
+    <string name="russian">Russian</string>
+    <string name="ukrainian">Ukrainian</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="japanese">Japanese</string>
+    <string name="korean">Korean</string>
+    <string name="chinese_sim">Chinese simplified</string>
+    <string name="chinese_tr">Chinese Traditiona</string>
+
+    <string name="mnemonic_length">Mnemonic length</string>
+    <string name="txhash">TxHash</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="actual_fee">Actual fee</string>
+    <string name="waiting">Waiting %d seconds...</string>
+    <string name="about_content">AMOVEO (VEO) is a mineable PoW highly-scalable blockchain for prediction markets, investment and insurance contracts and various derivatives such as stablecoins.\n\nWith Amoveo Wallet, you can store and exchange VEO coins in a completely secure and efficient manner. Here we\'ve everything you need in just one place.</string>
+    <string name="follow_twitter">Amoveo community</string>
+    <string name="send_max">Send max</string>
+    <string name="wallet_password_info">Essential for secure transactions and exchange operations in your wallet. It is
+        the only way to access your master mnemonic passphrase. Remember, you can use different master passwords on
+        different devices.
+    </string>
+    <string name="wallet_memonic_info">Write down this passphrase and store it somewhere safe. This is the only way to
+        restore access to your wallet.
+    </string>
+    <string name="with_passphrase">With passphrase</string>
+    <string name="with_private_key">With private key</string>
+    <string name="export_private_key">Export private key</string>
+    <string name="invalid_amount_error">Invalid amount</string>
+    <string name="action_show_mnemonic">Remind passphrase</string>
+    <string name="no_mnemonic">It seems your wallet was restored from the private key, so it\'s impossible to get its passphrase.\nPlease use «Export private key»</string>
+    <string name="when">When</string>
+    <string name="see_in_blockchain">View in blockchain</string>
+    <string name="waiting_confirmation">Waiting confirmation</string>
+    <string name="confirmations">Confirmations</string>
+    <string name="clear">Clear</string>
+    <string name="blockchain_node">Blockchain node</string>
+    <string name="action_change_node">Blockchain node</string>
+    <string name="restore_default">Restore default</string>
+    <string name="prompt_node_address">Node address</string>
+
+    <string-array name="network_list">
+        <item>Main net</item>
+    </string-array>
+
+    <string-array name="privacy_list">
+        <item>Lite</item>
+        <item>Above lite</item>
+        <item>Below medium</item>
+        <item>Medium</item>
+        <item>Above medium</item>
+        <item>Below standard</item>
+        <item>Standard</item>
+        <item>Above standard</item>
+        <item>Paranoid</item>
+    </string-array>
+
+    <string-array name="currency_list">
+        <item>@string/usd_symbol</item>
+        <item>@string/eur_symbol</item>
+    </string-array>
+
+    <string-array name="fee_level_list">
+        <item>@string/low</item>
+        <item>@string/standard</item>
+        <item>@string/fast</item>
+        <item>@string/urgent</item>
+    </string-array>
+
+    <string-array name="mnemonic_length_list">
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+        <item>21</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="contract_list">
+        <item>@string/amoveo_name</item>
+    </string-array>
+
+    <string-array name="language_list">
+        <item>@string/english</item>
+        <item>@string/french</item>
+        <item>@string/spanish</item>
+        <item>@string/italian</item>
+        <item>@string/czech</item>
+        <item>@string/russian</item>
+        <item>@string/ukrainian</item>
+        <item>@string/indonesian</item>
+        <item>@string/japanese</item>
+        <item>@string/korean</item>
+        <item>@string/chinese_sim</item>
+        <item>@string/chinese_tr</item>
+    </string-array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background">
+
+    <include layout="@layout/toolbar_inverse"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <View android:id="@+id/qr_code"
+          android:layout_width="@dimen/size500"
+          android:layout_height="@dimen/size500"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/size140"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/size360"
+          android:background="@drawable/rectangle_white"
+          android:layout_alignParentBottom="true"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size40"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text32"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:lines="3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size220"/>
+
+    <View android:id="@+id/button_center"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"/>
+
+    <View android:id="@+id/receive_button"
+          android:layout_width="@dimen/size125"
+          android:layout_height="@dimen/size125"
+          android:layout_toStartOf="@+id/button_center"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="@dimen/size63"
+          android:layout_marginEnd="@dimen/size63"
+          android:background="@drawable/ic_share"/>
+
+    <View android:id="@+id/copy_button"
+          android:layout_width="@dimen/size125"
+          android:layout_height="@dimen/size125"
+          android:layout_alignParentBottom="true"
+          android:layout_toEndOf="@+id/button_center"
+          android:layout_marginBottom="@dimen/size63"
+          android:layout_marginStart="@dimen/size63"
+          android:background="@drawable/ic_copy"/>
+</RelativeLayout>

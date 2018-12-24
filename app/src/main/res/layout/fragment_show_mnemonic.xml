@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_background">
+
+    <include layout="@layout/toolbar_inverse"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/mnemonic"
+            style="@style/MultiInputEditText"
+            android:lines="4"
+            android:layout_marginLeft="@dimen/size40"
+            android:layout_marginRight="@dimen/size40"
+            android:layout_marginTop="@dimen/size160"
+            android:padding="@dimen/size40"
+            android:gravity="top"
+            android:background="@drawable/rectangle_white"
+            android:inputType="textMultiLine"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size63"
+            android:paddingBottom="@dimen/size63"
+            android:paddingStart="@dimen/size63"
+            android:paddingEnd="@dimen/size250"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rectangle_white"
+            android:textColor="@color/main_background"
+            android:textSize="@dimen/text28"
+            android:text="@string/wallet_memonic_info"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/size63"
+            android:layout_marginEnd="@dimen/size63"
+            android:layout_height="@dimen/size125"
+            android:layout_width="@dimen/size125"
+            android:background="@drawable/button_round"/>
+</FrameLayout>

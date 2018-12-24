@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background">
+
+    <View android:id="@+id/logo"
+          android:layout_height="@dimen/size125"
+          android:layout_width="@dimen/size110"
+          android:layout_marginTop="@dimen/size160"
+          android:layout_centerHorizontal="true"
+          android:visibility="gone"
+          android:background="@drawable/ic_logo_app"/>
+
+    <RelativeLayout android:id="@+id/logo_compat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size110">
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text96"
+                android:text="Amoveo"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size110"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text48"
+                android:text="@string/wallet"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/create_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size125"
+                    android:layout_marginTop="@dimen/size500"
+                    android:layout_marginEnd="@dimen/size40"
+                    android:background="@drawable/rectangle_yellow">
+
+        <View android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:background="@drawable/ic_wallet"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_alignParentStart="true"
+              android:layout_centerVertical="true"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/size125"
+                  android:layout_alignParentStart="true"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/main_background"
+                  android:textSize="@dimen/text40"
+                  android:text="@string/action_create_wallet"/>
+
+        <View android:layout_width="@dimen/size20"
+              android:layout_height="@dimen/size32"
+              android:layout_centerVertical="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="@dimen/size50"
+              android:background="@drawable/ic_arrow_black"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/restore_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size125"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginEnd="@dimen/size40"
+                    android:layout_below="@+id/create_wallet_button"
+                    android:background="@drawable/rectangle_white">
+
+        <View android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:background="@drawable/ic_restore"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_alignParentStart="true"
+              android:layout_centerVertical="true"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/size125"
+                  android:layout_alignParentStart="true"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/main_background"
+                  android:textSize="@dimen/text40"
+                  android:text="@string/action_restore_wallet"/>
+
+        <View android:layout_width="@dimen/size20"
+              android:layout_height="@dimen/size32"
+              android:layout_centerVertical="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="@dimen/size50"
+              android:background="@drawable/ic_arrow_black"/>
+    </RelativeLayout>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginBottom="@dimen/size63"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text32"
+            android:text="@string/action_about"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

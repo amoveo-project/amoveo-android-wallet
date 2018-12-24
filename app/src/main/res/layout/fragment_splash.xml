@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_background">
+
+    <View android:id="@+id/logo"
+          android:layout_width="@dimen/size400"
+          android:layout_height="@dimen/size125"
+          android:visibility="gone"
+          android:layout_gravity="center"
+          android:background="@drawable/ic_logo"/>
+
+    <RelativeLayout android:id="@+id/logo_compat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text96"
+                android:text="Amoveo"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size110"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text48"
+                android:text="@string/wallet"/>
+    </RelativeLayout>
+
+</FrameLayout>

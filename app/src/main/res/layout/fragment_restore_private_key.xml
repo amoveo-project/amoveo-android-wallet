@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_background">
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/private_key_layout"
+            style="@style/EditTextContrastHint"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/size63"
+            android:layout_marginEnd="@dimen/size63"
+            android:layout_marginTop="@dimen/size40">
+        <com.devspark.robototextview.widget.RobotoEditText
+                android:id="@+id/private_key"
+                style="@style/MainInputEditText"
+                android:hint="@string/prompt_private_key"
+                android:textColorHint="@color/white"
+                app:backgroundTint="@color/white"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            style="@style/MainButton"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size40"
+            android:text="@string/action_continue"/>
+</FrameLayout>

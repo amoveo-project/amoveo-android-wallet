@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size110"
+            android:layout_marginLeft="@dimen/size63"
+            android:layout_gravity="left"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/light_gray"
+            android:text="@string/language"/>
+
+    <Spinner android:id="@+id/language"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="@dimen/size63"
+             android:layout_marginRight="@dimen/size300"
+             android:layout_marginTop="@dimen/size160"
+             android:textSize="@dimen/text32"
+             android:textColor="@color/transparent_dark_gray"
+             android:entries="@array/language_list"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/language"
+            android:layout_marginTop="@dimen/size40"
+            android:layout_marginLeft="@dimen/size63"
+            android:layout_gravity="left"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/light_gray"
+            android:text="@string/privacy"/>
+
+    <Spinner android:id="@+id/privacy"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="@dimen/size63"
+             android:layout_marginRight="@dimen/size300"
+             android:layout_below="@+id/language"
+             android:layout_marginTop="@dimen/size90"
+             android:layout_alignParentLeft="true"
+             android:textSize="@dimen/text32"
+             android:textColor="@color/transparent_dark_gray"
+             android:entries="@array/privacy_list"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/privacy"
+            android:layout_marginTop="@dimen/size40"
+            android:layout_marginLeft="@dimen/size63"
+            android:layout_gravity="left"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/light_gray"
+            android:text="@string/mnemonic_length"/>
+
+    <Spinner android:id="@+id/mnemonic_length"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="@dimen/size63"
+             android:layout_marginRight="@dimen/size300"
+             android:layout_below="@+id/privacy"
+             android:layout_marginTop="@dimen/size90"
+             android:layout_alignParentLeft="true"
+             android:textSize="@dimen/text32"
+             android:textColor="@color/transparent_dark_gray"
+             android:entries="@array/mnemonic_length_list"/>
+</RelativeLayout>

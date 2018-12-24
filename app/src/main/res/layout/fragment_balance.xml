@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background">
+
+    <include layout="@layout/toolbar_inverse"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text68"
+            android:textColor="@color/white"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size140"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/amoveo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/balance"
+            android:text="@string/amoveo_name"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text32"
+            android:textColor="@color/text_color"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="@dimen/size320"
+          android:background="@drawable/rectangle_white"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/transactions_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size320"
+            android:scrollbars="vertical"/>
+
+        <FrameLayout
+                android:id="@+id/empty"
+                android:layout_marginTop="@dimen/size320"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/empty_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size250"
+                    android:layout_gravity="top|center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/no_transactions_info"
+                    android:textSize="@dimen/text40"
+                    android:textColor="@color/transparent_dark_gray"/>
+        </FrameLayout>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/connection_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50"
+            android:layout_marginTop="@dimen/size110"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:gravity="center"
+            android:background="@color/red"
+            android:visibility="gone"/>
+</RelativeLayout>

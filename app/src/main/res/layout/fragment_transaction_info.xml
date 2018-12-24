@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background">
+
+    <include layout="@layout/toolbar_inverse"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size140"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text68"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text32"
+            android:textColor="@color/text_color"
+            android:text="@string/amoveo_name"/>
+
+    <View android:id="@+id/icon"
+          android:layout_width="@dimen/size125"
+          android:layout_below="@+id/amount"
+          android:layout_height="@dimen/size125"
+          android:layout_marginTop="@dimen/size63"
+          android:layout_centerHorizontal="true"/>
+
+    <View android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/size420"
+          android:background="@drawable/rectangle_white"/>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true" android:layout_below="@+id/icon">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginStart="@dimen/size63"
+                android:textSize="@dimen/text24"
+                android:textColor="@color/transparent_gray"
+                android:text="@string/to"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_hint"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_marginStart="@dimen/size63"
+                android:layout_marginEnd="@dimen/size200"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textSize="@dimen/text40"
+                android:textColor="@color/transparent_dark_gray"/>
+
+        <View android:id="@+id/copy_address"
+              android:layout_width="@dimen/size80"
+              android:layout_height="@dimen/size80"
+              android:layout_marginTop="@dimen/size50"
+              android:layout_marginEnd="@dimen/size63"
+              android:layout_alignParentEnd="true"
+              android:background="@drawable/ic_copy"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/datetime_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginStart="@dimen/size63"
+                android:textSize="@dimen/text24"
+                android:textColor="@color/transparent_gray"
+                android:text="@string/when"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datetime_hint"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_marginStart="@dimen/size63"
+                android:layout_marginEnd="@dimen/size200"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textSize="@dimen/text40"
+                android:textColor="@color/transparent_dark_gray"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/confirmations_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginEnd="@dimen/size63"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text24"
+                android:textColor="@color/transparent_gray"
+                android:text="@string/confirmations"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/confirmations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmations_hint"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size63"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textSize="@dimen/text40"
+                android:textColor="@color/transparent_dark_gray"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/txhash_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datetime"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginStart="@dimen/size63"
+                android:textSize="@dimen/text24"
+                android:textColor="@color/transparent_gray"
+                android:text="@string/txhash"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/txhash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txhash_hint"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_marginStart="@dimen/size63"
+                android:layout_marginEnd="@dimen/size200"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textSize="@dimen/text40"
+                android:textColor="@color/transparent_dark_gray"/>
+
+        <View android:id="@+id/copy_txhash"
+              android:layout_width="@dimen/size80"
+              android:layout_height="@dimen/size80"
+              android:layout_below="@+id/datetime"
+              android:layout_marginTop="@dimen/size50"
+              android:layout_marginEnd="@dimen/size63"
+              android:layout_alignParentEnd="true"
+              android:background="@drawable/ic_copy"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/actual_fee_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txhash"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginStart="@dimen/size63"
+                android:textSize="@dimen/text24"
+                android:textColor="@color/transparent_gray"
+                android:text="@string/actual_fee"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/actual_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actual_fee_hint"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_marginLeft="@dimen/size63"
+                android:layout_marginRight="@dimen/size63"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/text32"
+                android:textColor="@color/transparent_dark_gray"/>
+    </RelativeLayout>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/goto_txhash"
+            style="@style/MainButtonBlack"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size40"
+            android:text="@string/see_in_blockchain"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/connection_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50"
+            android:layout_marginTop="@dimen/size110"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:gravity="center"
+            android:background="@color/red"
+            android:visibility="gone"/>
+</RelativeLayout>

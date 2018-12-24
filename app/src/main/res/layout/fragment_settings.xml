@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background">
+
+    <include layout="@layout/toolbar_inverse"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size160"
+                android:layout_marginBottom="@dimen/size140">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_background">
+
+            <RelativeLayout android:id="@+id/setup_pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size125"
+                            android:layout_marginEnd="@dimen/size40"
+                            android:background="@drawable/rectangle_gray">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="@dimen/size125"
+                          android:layout_alignParentStart="true"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text40"
+                          android:text="@string/create_pin"/>
+
+                <View android:layout_width="@dimen/size20"
+                      android:layout_height="@dimen/size32"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="@dimen/size50"
+                      android:background="@drawable/ic_arrow_yellow"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/show_mnemonic"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size125"
+                            android:layout_below="@+id/setup_pin"
+                            android:layout_marginTop="@dimen/size40"
+                            android:layout_marginEnd="@dimen/size40"
+                            android:background="@drawable/rectangle_gray">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="@dimen/size125"
+                          android:layout_alignParentStart="true"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text40"
+                          android:text="@string/action_show_mnemonic"/>
+
+                <View android:layout_width="@dimen/size20"
+                      android:layout_height="@dimen/size32"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="@dimen/size50"
+                      android:background="@drawable/ic_arrow_yellow"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/change_node"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size125"
+                            android:layout_below="@+id/show_mnemonic"
+                            android:layout_marginTop="@dimen/size80"
+                            android:layout_marginEnd="@dimen/size40"
+                            android:background="@drawable/rectangle_gray">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="@dimen/size125"
+                          android:layout_alignParentStart="true"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text40"
+                          android:text="@string/blockchain_node"/>
+
+                <View android:layout_width="@dimen/size20"
+                      android:layout_height="@dimen/size32"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="@dimen/size50"
+                      android:background="@drawable/ic_arrow_yellow"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/new_wallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size125"
+                            android:layout_below="@+id/change_node"
+                            android:layout_marginTop="@dimen/size80"
+                            android:layout_marginEnd="@dimen/size40"
+                            android:background="@drawable/rectangle_gray">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="@dimen/size125"
+                          android:layout_alignParentStart="true"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text40"
+                          android:text="@string/action_new_wallet"/>
+
+                <View android:layout_width="@dimen/size20"
+                      android:layout_height="@dimen/size32"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="@dimen/size50"
+                      android:background="@drawable/ic_arrow_yellow"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size125"
+                            android:layout_below="@+id/new_wallet"
+                            android:layout_marginTop="@dimen/size80"
+                            android:layout_marginBottom="@dimen/size80"
+                            android:layout_marginEnd="@dimen/size40"
+                            android:background="@drawable/rectangle_gray">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="@dimen/size125"
+                          android:layout_alignParentStart="true"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text40"
+                          android:text="@string/action_about"/>
+
+                <View android:layout_width="@dimen/size20"
+                      android:layout_height="@dimen/size32"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="@dimen/size50"
+                      android:background="@drawable/ic_arrow_yellow"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/export_private_key"
+            style="@style/MainButtonWhite"
+            android:layout_width="@dimen/size360"
+            android:layout_marginBottom="@dimen/size40"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false"
+            android:text="@string/export_private_key"/>
+</RelativeLayout>

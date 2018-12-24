@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_background">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+            android:id="@+id/mnemonic"
+            style="@style/MultiInputEditText"
+            android:lines="4"
+            android:layout_marginLeft="@dimen/size40"
+            android:layout_marginRight="@dimen/size40"
+            android:layout_marginTop="@dimen/size40"
+            android:padding="@dimen/size40"
+            android:gravity="top"
+            android:background="@drawable/rectangle_white"
+            android:inputType="textMultiLine"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            style="@style/MainButton"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size40"
+            android:text="@string/action_continue"/>
+</FrameLayout>
